@@ -31,6 +31,8 @@
 cmake_minimum_required(VERSION 2.6)
 project(firestr)
 
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/products/bin)
+
 if(APPLE)
     add_definitions(-D_GLIBCXX_USE_NANOSLEEP)
     link_directories(/usr/local/lib)
